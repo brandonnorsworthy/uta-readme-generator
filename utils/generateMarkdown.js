@@ -60,40 +60,41 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
   
-  ### Description
+  ## Description
   
   ${data.description}
   
-  ### Table of Content
+  ## Table of Content
   
-  [Installation Instructions](### Installation Instructions)  
-  [Usage Information](### Usage Information)  
-  [Contribution Guidelines](### Contribution Guidelines)  
-  [Test Instructions](### Test Instructions)  
-  [Questions](### Questions)  
+  [Installation Instructions](##Installation-Instructions)  
+  [Usage Information](##Usage-Information)  
+  [Contribution Guidelines](##Contribution-Guidelines)  
+  [Test Instructions](##Test-Instructions)  
+  [Questions](##Questions)  
   
-  ### Installation Instructions
+  ## Installation Instructions
   
   ${data.install}  
   \`\`\`${data.install_code}\`\`\`
   
-  ### Usage Information
+  ## Usage Information
   
-  ${data.usage}
+  ${data.usage}  
+  \`\`\`${data.usage_code}\`\`\`
   
-  ### License
+  ## License
   
   ${data.license}
   
-  ### Contribution Guidelines
+  ## Contribution Guidelines
   
   ${data.contribution}
   
-  ### Test Instructions
+  ## Test Instructions
   
   ${data.test}
   
-  ### Questions
+  ## Questions
   
   [@${data.github}](https://github.com/${data.github})
   
