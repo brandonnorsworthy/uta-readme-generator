@@ -5,14 +5,19 @@ function renderLicenseBadge(license) {
   switch (license) {
     case "Apache 2.0 License":
       str = "https://img.shields.io/badge/License-Apache%202.0-blue.svg";
+      break;
     case "BSD 3-Clause License":
       str = "https://img.shields.io/badge/License-BSD%203--Clause-blue.svg";
+      break;
     case "MIT License":
       str = "https://img.shields.io/badge/License-MIT-yellow.svg";
+      break;
     case "IBM Public License Version 1.0":
       str = "https://img.shields.io/badge/License-IPL%201.0-blue.svg";
+      break;
     default:
       str = "";
+      break;
   }
 
   return str;
@@ -21,18 +26,23 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  let str = "";
+  var str = "";
   switch (license) {
     case "Apache 2.0 License":
       str = "https://opensource.org/licenses/Apache-2.0";
+      break;
     case "BSD 3-Clause License":
       str = "https://opensource.org/licenses/BSD-3-Clause";
+      break;
     case "MIT License":
       str = "https://opensource.org/licenses/MIT";
+      break;
     case "IBM Public License Version 1.0":
       str = "https://opensource.org/licenses/IPL-1.0";
+      break;
     default:
       str = "";
+      break;
   }
 
   return str;
@@ -50,38 +60,40 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
   
-  # Description
+  ### Description
   
   ${data.description}
   
-  # Table of Content
+  ### Table of Content
   
-  [Installation](#Installation)
-  [Installation](#Usage)
-  [Installation](#Contribution)
-  [Installation](#Test)
-  [Installation](#Questions)
+  [Installation Instructions](#Installation)  
+  [Usage Information](#Usage)  
+  [Contribution Guidelines](#Contribution)  
+  [Test Instructions](#Test)  
+  [Questions](#Questions)  
   
-  # Installation Instructions
+  ### Installation Instructions
   
-  ${data.install}
+  \`\`\`${data.install}\`\`\`
   
-  # Usage Information
+  ### Usage Information
   
   ${data.usage}
   
-  # Contribution Guidelines
+  ### Contribution Guidelines
   
   ${data.contribution}
   
-  # Test Instructions
+  ### Test Instructions
   
   ${data.test}
   
-  # Questions
+  ### Questions
   
   additional information of how to reach
-  ${data.email} ${data.github}`;
+  email: ${data.email}
+
+  [${data.github}](https://github.com/${data.github})`;
 }
 
 module.exports = generateMarkdown;
