@@ -66,19 +66,24 @@ function generateMarkdown(data) {
   
   ### Table of Content
   
-  [Installation Instructions](#Installation)  
-  [Usage Information](#Usage)  
-  [Contribution Guidelines](#Contribution)  
-  [Test Instructions](#Test)  
-  [Questions](#Questions)  
+  [Installation Instructions](### Installation Instructions)  
+  [Usage Information](### Usage Information)  
+  [Contribution Guidelines](### Contribution Guidelines)  
+  [Test Instructions](### Test Instructions)  
+  [Questions](### Questions)  
   
   ### Installation Instructions
   
-  \`\`\`${data.install}\`\`\`
+  ${data.install}  
+  \`\`\`${data.install_code}\`\`\`
   
   ### Usage Information
   
   ${data.usage}
+  
+  ### License
+  
+  ${data.license}
   
   ### Contribution Guidelines
   
@@ -90,10 +95,10 @@ function generateMarkdown(data) {
   
   ### Questions
   
-  additional information of how to reach
-  email: ${data.email}
-
-  [${data.github}](https://github.com/${data.github})`;
+  [@${data.github}](https://github.com/${data.github})
+  
+  Reach out to me at [${data.email}](mailto:${data.email}) for questions
+  `;
 }
 
 module.exports = generateMarkdown;

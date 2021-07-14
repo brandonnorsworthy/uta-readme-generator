@@ -2,6 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
+
 // TODO: Create an array of questions for user input
 const questions = [
     {
@@ -23,9 +24,21 @@ const questions = [
         name: 'install',
     },
     {
+        //install code
+        type: 'input',
+        message: 'Enter a installation code example (leave blank if not needed)',
+        name: 'install_code',
+    },
+    {
         //usage
         type: 'input',
         message: 'Enter the usage information',
+        name: 'usage',
+    },
+    {
+        //usage code
+        type: 'input',
+        message: 'Enter a usage code example (leave blank if not needed)',
         name: 'usage',
     },
     {
