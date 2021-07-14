@@ -72,12 +72,12 @@ function generateMarkdown(data) {
   [Test Instructions](##Test-Instructions)  
   [Questions](##Questions)  
   
-  ## Installation Instructions
+  ## Installation-Instructions
   
   ${data.install}  
   \`\`\`${data.install_code}\`\`\`
   
-  ## Usage Information
+  ## Usage-Information
   
   ${data.usage}  
   \`\`\`${data.usage_code}\`\`\`
@@ -86,17 +86,17 @@ function generateMarkdown(data) {
   
   ${data.license}
   
-  ## Contribution Guidelines
+  ## Contribution-Guidelines
   
   ${data.contribution}
   
-  ## Test Instructions
+  ## Test-Instructions
   
   ${data.test}
   
   ## Questions
   
-  [@${data.github}](https://github.com/${data.github})
+  GitHub Username: [@${data.github}](https://github.com/${data.github})
   
   Reach out to me at [${data.email}](mailto:${data.email}) for questions
   `;

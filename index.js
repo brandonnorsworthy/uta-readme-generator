@@ -39,7 +39,7 @@ const questions = [
         //usage code
         type: 'input',
         message: 'Enter a usage code example (leave blank if not needed)',
-        name: 'usage',
+        name: 'usage_code',
     },
     {
         //license
