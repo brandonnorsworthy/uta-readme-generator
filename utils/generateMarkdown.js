@@ -86,7 +86,7 @@ function generateMarkdown(data) {
   
   ## Installation-Instructions
   
-  ${data.install}
+  ${data.install}  
   ${data.install_code}
   
   ## Usage-Information
@@ -108,9 +108,9 @@ function generateMarkdown(data) {
   
   ## Questions
   
-  GitHub Username: [@${data.github}](https://github.com/${data.github})
+  GitHub Username: [@${data.github}](https://github.com/${data.github})  
   
-  Reach out to me at [${data.email}](mailto:${data.email}) for questions
+  Reach out to me at [${data.email}](mailto:${data.email}) for questions  
   `;
 }
 
