@@ -14,6 +14,10 @@
   [Test Instructions](#test-instructions)  
   [Questions](#questions)  
   
+  ## Demo Gif
+  
+  ![gif of console demo](/assets/desktop_demo.gif)
+
   ## Installation-Instructions
   
   This project requires Node JS and the npm package inquires to function properly please run the command below to get started  
