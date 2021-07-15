@@ -8,11 +8,11 @@
   
   ## Table of Content
   
-  [Installation Instructions](##-installation-instructions)  
-  [Usage Information](##-usage-information)  
-  [Contribution Guidelines](##-contribution-guidelines)  
-  [Test Instructions](##-test-instructions)  
-  [Questions](##-questions)  
+  [Installation Instructions](##installation-instructions)  
+  [Usage Information](##usage-information)  
+  [Contribution Guidelines](##contribution-guidelines)  
+  [Test Instructions](##test-instructions)  
+  [Questions](##questions)  
   
   ## Installation-Instructions
   
