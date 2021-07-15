@@ -56,6 +56,18 @@ function renderLicenseSection(license) {
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
+  if (data.install_code) {
+    data.install_code = `\`\`\`${data.install_code}\`\`\``
+  } else {
+    data.install_code = ``
+  }
+
+  if (data.usage_code) {
+    data.usage_code = `\`\`\`${data.usage_code}\`\`\``
+  } else {
+    data.usage_code = ``
+  }
+
   return `# ${data.title}
   
   ${renderLicenseSection(data.license)}
@@ -74,13 +86,13 @@ function generateMarkdown(data) {
   
   ## Installation-Instructions
   
-  ${data.install}  
-  \`\`\`${data.install_code}\`\`\`
+  ${data.install}
+  ${data.install_code}
   
   ## Usage-Information
   
   ${data.usage}  
-  \`\`\`${data.usage_code}\`\`\`
+  ${data.usage_code}
   
   ## License
   

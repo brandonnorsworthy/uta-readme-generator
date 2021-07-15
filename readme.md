@@ -14,31 +14,31 @@
   [Test Instructions](##Test-Instructions)  
   [Questions](##Questions)  
   
-  ## Installation Instructions
+  ## Installation-Instructions
   
-  This project requires Node JS and the npm package inquires to function properly please run the command below to get started  
+  This project requires Node JS and the npm package inquires to function properly please run the command below to get started
   ```npm install inquirer```
   
-  ## Usage Information
+  ## Usage-Information
   
   node /directory/index.js  
-  ```undefined```
+  ```node index.js```
   
   ## License
   
   MIT License
   
-  ## Contribution Guidelines
+  ## Contribution-Guidelines
   
   This is a private repository for a homework assignment no contributions will be accepted here
   
-  ## Test Instructions
+  ## Test-Instructions
   
-  To test the code enter any data you would like to appear in the read me for each corresponding section that is prompted
+  there is no implemented test scenarios
   
   ## Questions
   
-  [@brandonnorsworthy](https://github.com/brandonnorsworthy)
+  GitHub Username: [@brandonnorsworthy](https://github.com/brandonnorsworthy)
   
   Reach out to me at [brandonknorsworthy@gmail.com](mailto:brandonknorsworthy@gmail.com) for questions
   
