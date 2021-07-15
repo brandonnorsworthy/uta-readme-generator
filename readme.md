@@ -16,7 +16,7 @@
   
   ## Installation-Instructions
   
-  This project requires Node JS and the npm package inquires to function properly please run the command below to get started
+  This project requires Node JS and the npm package inquires to function properly please run the command below to get started  
   ```npm install inquirer```
   
   ## Usage-Information
