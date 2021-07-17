@@ -6,10 +6,22 @@ const generateMarkdown = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 const questions = [
     {
+        //filename
+        type: 'input',
+        message: 'Enter the filename of the project',
+        name: 'fileName',
+    },
+    {
         //title of project
         type: 'input',
         message: 'Enter the title of the project',
         name: 'title',
+    },
+    {
+        //deployedUrl of project
+        type: 'input',
+        message: 'Enter the deployed link of the project (if deployed)',
+        name: 'deployedUrl',
     },
     {
         //description
@@ -90,7 +102,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer.prompt(questions)
     .then((response) =>
-        writeToFile("readme", response)
+        writeToFile(response.fileName, response)
     );
 }
 
