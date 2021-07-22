@@ -72,7 +72,7 @@ function generateMarkdown(data) {
   
   ${renderLicenseSection(data.license)}
   
-  ${data.deployedUrl}  
+  deployment:${data.deployedUrl}  
   ## Description
   
   ${data.description}
